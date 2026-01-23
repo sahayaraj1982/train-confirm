@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TRAIN CONFIRM</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRAIN CONFIRM</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f4f7;
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
 
-    .container {
-      padding: 20px;
-      max-width: 480px;
-      margin: auto;
-    }
+.header {
+    background: red;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
 
-    h2 {
-      text-align: center;
-      color: #0a58ca;
-      margin-bottom: 20px;
-    }
+.route {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
 
-    label {
-      font-weight: bold;
-      display: block;
-      margin-top: 10px;
-    }
+.train-card {
+    background: white;
+    margin: 12px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-    input {
-      width: 100%;
-      padding: 12px;
-      margin-top: 6px;
-      margin-bottom: 12px;
-      font-size: 16px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
+.train-name {
+    font-size: 18px;
+    font-weight: bold;
+}
 
-    button {
-      width: 100%;
-      padding: 14px;
-      font-size: 17px;
-      background: #0a58ca;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+.confirm {
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+}
 
-    button:hover {
-      background: #084298;
-    }
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+}
+</style>
+</head>
 
-    .card {
-      background: #ffffff;
-      padding: 15px;
-      margin-top: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
+<body>
 
-    .confirm {
-      color: green;
-      font-weight: bold;
-    }
+<div class="header">TRAIN CONFIRM</div>
 
-    .
+<div class="route">
+Madurai ➝ Chennai <br>
+<strong>CONFIRM Tickets Available</strong>
+</div>
+
+<div class="train-card">
+<div class="train-name">Vande Bharat Express</div>
+<div>CC Class</div>
+<div class="confirm">✔ CONFIRMED</div>
+</div>
+
+<div class="train-card">
+<div class="train-name">Pandian Express</div>
+<div>3A AC Sleeper</div>
+<div class="confirm">✔ CONFIRMED</div>
+</div>
+
+<div class="train-card">
+<div class="train-name">Vaigai Express</div>
+<div>2S / CC</div>
+<div class="confirm">✔ CONFIRMED</div>
+</div>
+
+<div class="footer">
+Enquiry Only – No Booking | No Payment <br>
+📞 WhatsApp: 9361203202
+</div>
+
+</body>
+</html>
