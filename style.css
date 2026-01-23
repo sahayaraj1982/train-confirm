@@ -1,49 +1,78 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f4f6f8;
-}
-
-header {
-  background: #0a8f08;
-  color: white;
+  background: #f5f5f5;
   padding: 15px;
+}
+
+h2 {
   text-align: center;
 }
 
-.filters {
+input {
+  width: 45%;
   padding: 10px;
-  text-align: center;
+  margin: 5px 2%;
+  box-sizing: border-box;
 }
 
-select {
-  padding: 8px;
-  font-size: 16px;
+button {
+  padding: 10px 14px;
+  margin: 6px 3px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-#train-list {
-  padding: 10px;
+/* Filter buttons */
+button:nth-of-type(2) {
+  background: #2ecc71;
+  color: #fff;
 }
 
+button:nth-of-type(3) {
+  background: #f1c40f;
+  color: #000;
+}
+
+button:nth-of-type(4) {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* Result cards */
 .card {
-  background: white;
-  margin-bottom: 10px;
-  padding: 12px;
+  background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 12px;
+  margin: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.status {
-  color: green;
+/* Status colors */
+.status-CONFIRMED {
+  color: #2ecc71;
   font-weight: bold;
 }
 
-footer {
-  background: #fff;
-  text-align: center;
-  padding: 12px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border-top: 1px solid #ccc;
+.status-RAC {
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+.status-WL {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+    margin: 6px 0;
+  }
+
+  button {
+    width: 100%;
+  }
 }

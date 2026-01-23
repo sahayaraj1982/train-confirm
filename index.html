@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Confirm Train Enquiry</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <title>Train Confirm Ticket</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+    button {
+      padding: 8px 12px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    .card {
+      border: 1px solid #333;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Confirm Train Enquiry</h1>
-  <p>Confirmed tickets only</p>
-</header>
+  <h2>Train Ticket Availability</h2>
 
-<div class="filters">
-  <select id="classFilter">
-    <option value="ALL">All Classes</option>
-    <option value="CC">CC</option>
-    <option value="3A">3A</option>
-    <option value="SL">Sleeper</option>
-  </select>
-</div>
+  <input type="text" id="from" placeholder="From Station">
+  <input type="text" id="to" placeholder="To Station">
 
-<div id="train-list"></div>
+  <br>
 
-<footer>
-  <p>📞 Contact: <strong>9361203202</strong></p>
-</footer>
+  <button onclick="searchTrains()">Search</button>
 
-<script src="script.js"></script>
+  <br>
+
+  <button onclick="filterStatus('CONFIRMED')">Confirmed</button>
+  <button onclick="filterStatus('RAC')">RAC</button>
+  <button onclick="filterStatus('WL')">Waiting List</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+
 </body>
 </html>
