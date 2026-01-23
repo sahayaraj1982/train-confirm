@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+}
+
+header {
+  background: #0a8f08;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.filters {
+  padding: 10px;
+  text-align: center;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+#train-list {
+  padding: 10px;
+}
+
+.card {
+  background: white;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.status {
+  color: green;
+  font-weight: bold;
+}
+
+footer {
+  background: #fff;
+  text-align: center;
+  padding: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ccc;
+}
